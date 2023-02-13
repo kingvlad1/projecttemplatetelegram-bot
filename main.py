@@ -18,9 +18,9 @@ inlinebutton = InlineKeyboardButton(text="кнопка", callback_data="buttonda
 async def random(msg: types.Message):
     await msg.answer(reply_markup=builder, text="<b>Привіт!</b>\n<u><b>Я бот з крутими командами!</b></u>", parse_mode="html")
 
-@dp.message_handler(commands=["start"])  # сворення функції що реагує на початакову команду /help
+@dp.message_handler(commands=["help"])  # сворення функції що реагує на початакову команду /help
 async def random(msg: types.Message):
-    await msg.answer(reply_markup=builder, text="<b>Привіт!</b>\n<u><b>Я бот з крутими командами!</b></u>", parse_mode="html")
+    await msg.answer(reply_markup=builder, text="<b>Привіт!</b>\n<u><b>Це повідомлення help</b></u>", parse_mode="html")
 
 
 @dp.message_handler(commands=["inline"])  # сворення функції що реагує на команду /inline
