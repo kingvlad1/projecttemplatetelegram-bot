@@ -6,7 +6,7 @@ from aiogram.types import ReplyKeyboardRemove, ReplyKeyboardMarkup, KeyboardButt
 
 from random import randint
 
-TOKEN = "TOKEN"
+TOKEN = "TOKEN (.env)"
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
