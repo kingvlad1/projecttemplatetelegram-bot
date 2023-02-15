@@ -45,7 +45,7 @@ async def withkeyboard(msg: types.Message):
 @dp.message_handler()
 async def text(msg: types.Message):
     if (msg.text == "клавіатура"):
-        await msg.answer(text="ви натиснули на клавіатуру")
+        await msg.answer(text="ви натиснули на клавіатуру") #можна помістити свій текст, будь який. Також можна підключити html parse mod. Робиться це parse_mod='html'
 
 
 if __name__ == "__main__":
