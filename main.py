@@ -47,7 +47,7 @@ async def text(msg: types.Message):
     if (msg.text == "клавіатура"):
         await msg.answer(text="ви натиснули на клавіатуру") #можна помістити свій текст, будь який. Також можна підключити html parse mod. Робиться це parse_mod='html'
 
-
+#запуск коду
 if __name__ == "__main__":
     executor.start_polling(dp)
 
