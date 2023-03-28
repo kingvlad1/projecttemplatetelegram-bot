@@ -1,4 +1,4 @@
-#Бібліотеки потрібні для запуску
+#Бібліотеки потрібні для запуску коду
 from aiogram import Bot, types
 from aiogram.dispatcher import Dispatcher
 from aiogram.utils import executor
