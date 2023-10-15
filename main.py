@@ -1,4 +1,5 @@
-#Бібліотеки потрібні для запуску коду
+#Бібліотеки потрібні для запуску код
+#pip install aiogram
 from aiogram import Bot, types
 from aiogram.dispatcher import Dispatcher
 from aiogram.utils import executor
