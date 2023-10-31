@@ -44,6 +44,11 @@ async def withkeyboard(msg: types.Message):
     await msg.answer(text="це повідомлення з клавіатурною кнопкою", reply_markup=builder)
 
 
+@dp.message_handler(commands=["online"])  # функция реагує на команду online
+async def withkeyboard(msg: types.Message):
+    await msg.answer(text="Так, бот онлайн!")
+
+
 @dp.message_handler()
 async def text(msg: types.Message):
     if (msg.text == "клавіатура"):
